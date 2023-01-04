@@ -7,7 +7,7 @@
 }
 
 body {
-  background: url(/src/image/quantum-hatter.jpg) no-repeat;
+  background: url('/src/image/quantum-hatter.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -20,6 +20,11 @@ body {
     0 0 15px rgb(247, 244, 244), 0 0 15px rgb(247, 244, 244),
     0 0 15px rgb(241, 243, 243), 0 0 15px rgb(245, 248, 248),
     0 0 15px rgb(247, 248, 248);
+}
+.nav_cont{
+  position: fixed;
+width: 100%;
+z-index: 10000;
 }
 .nav_cont ul {
   position: static;
@@ -43,8 +48,7 @@ body {
 }
 
 .atom {
-  top: 5vw;
-  left: 50vw;
+  
   width: 70px;
   height: 70px;
   animation: spin 15s infinite;
