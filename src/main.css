@@ -1,0 +1,109 @@
+:root {
+  --gray: rgb(42, 61, 69);
+  --darkblue: rgb(17, 29, 74);
+  --lightblue: rgb(128, 243, 252);
+  --darkgreen: rgb(56, 104, 106);
+  --lightgreen: rgb(23, 184, 144);
+}
+
+body {
+  background: url(/src/image/quantum-hatter.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--lightblue);
+  font-family: "Goldman", cursive;
+  letter-spacing: 2px;
+  margin-top: 2vw;
+
+  text-shadow: 1px 1px 2px black, 1px 1px 2px black, 0 0 5px rgb(238, 234, 234),
+    0 0 15px rgb(247, 244, 244), 0 0 15px rgb(247, 244, 244),
+    0 0 15px rgb(241, 243, 243), 0 0 15px rgb(245, 248, 248),
+    0 0 15px rgb(247, 248, 248);
+}
+.nav_cont ul {
+  position: static;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  border: 2px solid var(--lightblue);
+  border-radius: 50%;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  background: radial-gradient(
+    rgba(128, 243, 252, 0.1),
+    rgba(128, 243, 252, 0.5),
+    rgba(128, 243, 252, 1)
+  );
+  box-shadow: 100px 0px 45px var(--lightblue), -100px 0px 45px var(--lightblue);
+}
+.nav_cont ul li {
+  font-size: 20px;
+}
+
+.atom {
+  top: 5vw;
+  left: 50vw;
+  width: 70px;
+  height: 70px;
+  animation: spin 15s infinite;
+  animation-timing-function: linear;
+}
+
+.nav_cont ul li a {
+  background: rgba(250, 247, 247, 0.1);
+  color: white;
+  border-radius: 50%;
+  margin: 1vw;
+}
+.nav_cont ul li a:hover {
+  animation: pulse-animation 1s 1;
+}
+.fotom {
+  display: block;
+  margin-left: auto; 
+  margin-right: auto;
+  width: 300px;
+  border-radius: 30%;
+
+  float: inline-start;
+}
+
+
+.focim {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+article {
+  margin: 3vw;
+}
+table {
+  border: 2px solid var(--lightblue);
+}
+table tr td {
+  border: 2px solid var(--lightblue);
+  text-align: center;
+}
+.munkak-cim {
+}
+.project-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  border: 2px solid white;
+  margin-top: 30px;
+
+  width: fit-content;
+  width: fit-content;
+  height: fit-content;
+}
+.project {
+  border: 2px solid var(--lightblue);
+}
+.project img {
+  width: 300px;
+}
