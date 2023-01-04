@@ -1,71 +1,43 @@
 <!DOCTYPE html>
 <html lang="hu">
   <head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/base.css" />
+    <link rel="stylesheet" href="./src/main.css" />
     <title>Portfolió</title>
   </head>
   <body>
     <header>
-      <h1>Tóth István János ~ <strong>Junior frontend fejlesztő</strong></h1>
-      <nav>
+      <nav class="nav_cont">
         <ul>
           <li><a href="#bemutatkozas">Bemutatkozás</a></li>
           <li><a href="#ismeretek">Fejlesztői ismereteim</a></li>
+          <img class="atom" src="./src/image/atom.png" />
           <li><a href="#munkak">Főbb munkáim</a></li>
-          <li><a href="#nyelv">Nyelvismeret</a></li>
-          <li><a href="#referencia">Referenciák</a></li>
           <li><a href="#kapcsolat">Kapcsolat</a></li>
         </ul>
       </nav>
+      <img class="fotom" src="./src/image/en_foto.png" alt="" />
+      <div class="focim">
+        <h1 id="bemutatkozas">
+          Tóth István János <br />
+          <strong>Junior Frontend Webfejlesztő</strong>
+        </h1>
+      </div>
     </header>
+
     <main>
-      <article>
-        <h2 id="bemutatkozas">Bemutatkozás:</h2>
+      <article class="bemutatkozas_cont">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
-          dolores, voluptates harum, libero minus cupiditate consectetur maxime
-          at magni quas nesciunt facilis explicabo. Aliquam obcaecati, cum
-          veniam deserunt molestiae consectetur Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Aspernatur, dolores, voluptates harum,
-          libero minus cupiditate consectetur maxime at magni quas nesciunt
-          facilis explicabo. Aliquam obcaecati, cum veniam deserunt molestiae
-          consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Aspernatur, dolores, voluptates harum, libero minus cupiditate
-          consectetur maxime at magni quas nesciunt facilis explicabo. Aliquam
-          obcaecati, cum veniam deserunt molestiae consectetur adipisicing elit.
-          Quidem eveniet necessitatibus sit tenetur adipisicing elit. Quidem
-          eveniet necessitatibus sit tenetur adipisicing elit. Quidem eveniet
-          necessitatibus sit tenetur? Praesentium aspernatur ullam quidem
-          deserunt vel architecto, nisi non dolorem blanditiis voluptatibus
-          dolor laboriosam dicta nihil minus.
+          Helló, a nevem Tóth István János, és junior webfejlesztő vagyok.
+          Szenvedélyem a felhasználóbarát és vizuálisan vonzó weboldalak és
+          webalkalmazások létrehozása, és mindig arra törekszem, hogy fejlesszem
+          készségeimet és új technológiákat tanuljak.Eddig elsősorban HTML, CSS
+          és JavaScript használatával készítettem weboldalakat.Érdeklődöm a
+          frontend és a backend technológiák iránt is.
         </p>
-      </article>
-      <article>
-        <h2 id="ismeretek">Fejlesztői ismereteim:</h2>
-        <table>
-          <tr>
-            <th>HTML5</th>
-            <th>CSS</th>
-            <tr>
-              <td>evenietum</td>
-              <td>Praesentium</td>
-            </tr>
-          
-          <tr>
-            <td>#</td>
-            <td>nesciunt</td>
-          </tr>
-        </table>
-      </article>
-      <article>
-        <h2 id="munkak">Főbb munkáim:</h2>
-        <ul>
-          <li><h3>consectetur</h3></li>
-          <li><h3>adipisicing</h3></li>
-          <li><h3>aspernatur</h3></li>
-        </ul>
       </article>
       <article>
         <h2 id="nyelv">Nyelvismeret:</h2>
@@ -74,40 +46,95 @@
           <li>Német</li>
         </ul>
       </article>
-      <article>
-        <h2 id="referencia">Referenciák:</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
-          dolores, voluptates harum, libero minus cupiditate consectetur maxime
-          at magni quas nesciunt facilis explicabo. Aliquam obcaecati, cum
-          veniam deserunt molestiae consectetur adipisicing elit. Quidem eveniet
-          necessitatibus sit tenetur? Praesentium aspernatur ullam quidem
-          deserunt vel architecto, nisi non dolorem blanditiis voluptatibus
-          dolor laboriosam dicta nihil minus.Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Aspernatur, dolores, voluptates harum,
-          libero minus cupiditate consectetur maxime at magni quas nesciunt
-          facilis explicabo. Aliquam obcaecati, cum veniam deserunt molestiae
-          consectetur adipisicing elit. Quidem eveniet necessitatibus sit
-          tenetur
-        </p>
+      <article id="ismeretek" class="ismeretek_cont">
+        <table>
+          <tr>
+            <th>Fejlesztői ismereteim:</th>
+          </tr>
+
+          <tr>
+            <td>HTML5</td>
+          </tr>
+
+          <tr>
+            <td>CSS</td>
+          </tr>
+          <tr>
+            <td>JAVASCRIPT</td>
+          </tr>
+        </table>
       </article>
+      <section>
+        <h2 id="munkak-cim">Munkáim:</h2>
+        <div class="project-cont">
+          <div class="project">
+            <img
+              src="https://cdn.stocksnap.io/img-thumbs/960w/programming-code_1STVFMTBJY.jpg"
+              alt="image"
+            />
+            <h3>PROJECT</h3>
+            <i>@</i>
+            <i>#</i>
+          </div>
+          <div class="project">
+            <img
+              src="https://cdn.stocksnap.io/img-thumbs/960w/programming-code_1STVFMTBJY.jpg"
+              alt="image"
+            />
+            <h3>PROJECT</h3>
+            <i>@</i>
+            <i>#</i>
+          </div>
+          <div class="project">
+            <img
+              src="https://cdn.stocksnap.io/img-thumbs/960w/programming-code_1STVFMTBJY.jpg"
+              alt="image"
+            />
+            <h3>PROJECT</h3>
+            <i>@</i>
+            <i>#</i>
+          </div>
+          <div class="project">
+            <img
+              src="https://cdn.stocksnap.io/img-thumbs/960w/programming-code_1STVFMTBJY.jpg"
+              alt="image"
+            />
+            <h3>PROJECT</h3>
+            <i>@</i>
+            <i>#</i>
+          </div>
+          <div class="project">
+            <img
+              src="https://cdn.stocksnap.io/img-thumbs/960w/programming-code_1STVFMTBJY.jpg"
+              alt="image"
+            />
+            <h3>PROJECT</h3>
+            <i>@</i>
+            <i>#</i>
+          </div>
+        </div>
+      </section>
       <article>
         <fieldset>
-        <legend><h2 id="kapcsolat">Kapcsolat:</h2></legend>
-        <p>E-mail címem: <a href = "mailto:abc@example.com">abc@example.com</a></p>
-        <form action="https://formspree.io/f/xwkyvlpj" method="post">
-          <input type="text" id="name" name="name" placeholder="Név" >
-          <input
-            name="Email"
-            id="email"
-            type="email"
-            placeholder="Email"
-          > <br>
-          <textarea id="#" name="text" rows="4" cols="50" placeholder="Üzenet"></textarea>
-          <br >
-          <button type="submit">KÜLDÉS</button>
-        </form>
-      </fieldset>
+          <legend><h2 id="kapcsolat">Kapcsolat:</h2></legend>
+          <p>
+            E-mail címem: <a href="mailto:abc@example.com">abc@example.com</a>
+          </p>
+          <form action="https://formspree.io/f/xwkyvlpj" method="post">
+            <input type="text" id="name" name="name" placeholder="Név" />
+            <input name="Email" id="email" type="email" placeholder="Email" />
+            <br />
+            <textarea
+              id="#"
+              name="text"
+              rows="4"
+              cols="50"
+              placeholder="Üzenet"
+            ></textarea>
+            <br />
+            <button type="submit">KÜLDÉS</button>
+          </form>
+        </fieldset>
       </article>
     </main>
     <footer>
