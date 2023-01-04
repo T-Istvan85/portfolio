@@ -8,10 +8,7 @@
 
 body {
   
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  
   color: var(--lightblue);
   font-family: "Goldman", cursive;
   letter-spacing: 2px;
