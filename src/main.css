@@ -7,7 +7,7 @@
 }
 
 body {
-  background: url('../src/image/quantum-hatter.jpg') no-repeat;
+  background: rgb(128, 243, 252);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
