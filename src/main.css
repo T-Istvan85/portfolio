@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url('./src/image/quantum-hatter.jpg') no-repeat;
+  background-image: url('./../../quantum-hatter.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
