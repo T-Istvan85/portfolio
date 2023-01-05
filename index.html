@@ -13,25 +13,42 @@
     
     <header>
       <nav class="nav_cont">
+        <input type="checkbox" name="" id="nav-checkbox" class="nav-checkbox">
+
+<label for="nav-checkbox">
+
+<div class="nav-checkbox_gomb">
+  <div class="nav-checkbox_vonal"></div>
+  <div class="nav-checkbox_vonal"></div>
+  <div class="nav-checkbox_vonal"></div>
+</div>
+
+
+
+</label>
+
         <ul>
           <li><a href="#bemutatkozas">Bemutatkozás</a></li>
-          <li><a href="#ismeretek">Technológiák </a></li>
+          <li><a href="#ismeretek">Ismereteim</a></li>
           <li><img class="atom" src="./src/image/atom.png" alt="atom" /></li>
           <li><a href="#munkak">Főbb munkáim</a></li>
           <li><a href="#kapcsolat">Kapcsolat</a></li>
         </ul>
       </nav>
-      <img class="fotom" src="./src/image/en_foto.png" alt="en" />
-      <div class="focim">
-        <h1 id="bemutatkozas">
-          Tóth István János <br />
-          <strong>Frontend Webfejlesztő</strong>
-        </h1>
-      </div>
+      
     </header>
 
     <main>
-      <article class="bemutatkozas_cont">
+      
+      <div class="focim">
+        <h1 class="fooldal-nev">
+          Tóth István János <br />
+          <strong>Frontend Webfejlesztő</strong>
+        </h1>
+        <img class="fooldal-kep" src="./src/image/en_foto.png" alt="en" />
+      </div>
+
+      <article id="bemutatkozas" class="bemutatkozas_cont">
         <p>
           Helló, a nevem Tóth István János, és junior webfejlesztő vagyok.
           Szenvedélyem a felhasználóbarát és vizuálisan vonzó weboldalak és

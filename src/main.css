@@ -31,6 +31,27 @@ body {
 width: 100%;
 z-index: 10000;
 }
+
+.nav-checkbox{
+  display: none;
+}
+.nav-checkbox_gomb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+width: 40px;
+height: 40px;
+background: red;
+}
+.nav-checkbox_vonal {
+width: 80%;
+height: 3px;
+background: black;
+}
+
+
 .nav_cont ul {
   position: static;
   display: flex;
@@ -39,6 +60,7 @@ z-index: 10000;
   padding: 15px;
   border: 2px solid var(--lightblue);
   border-radius: 50%;
+  
   margin-left: 1vw;
   margin-right: 1vw;
   background: radial-gradient(
@@ -69,22 +91,29 @@ z-index: 10000;
 .nav_cont ul li a:hover {
   animation: pulse-animation 1s 1;
 }
-.fotom {
-  display: block;
+.focim {
+  display: flex;
+  align-items: center;
+  
+  margin-bottom: 300px;
+  
+}
+.fooldal-nev{
+  font-size: 4em;
+  margin-top: 115px;
+  margin-left: 10vw;
+}
+.fooldal-kep {
+  display: none;
+  margin-top: 8vh;
   margin-left: auto; 
   margin-right: auto;
-  width: 300px;
+  width: 500px;
   border-radius: 30%;
-
-  float: inline-start;
 }
 
 
-.focim {
-  margin-top: 60px;
-  margin-bottom: 60px;
-  text-align: center;
-}
+
 
 article {
   margin: 3vw;
@@ -96,8 +125,8 @@ table tr td {
   border: 2px solid var(--lightblue);
   text-align: center;
 }
-.munkak-cim {
-}
+ 
+
 .project-cont {
   display: flex;
   flex-wrap: wrap;
@@ -115,4 +144,18 @@ table tr td {
 }
 .project img {
   width: 300px;
+}
+@media screen and (min-width: 576px) {
+  
+}
+@media screen and (min-width: 768px) {
+  .fooldal-kep {
+    display: block;
+  };
+}
+@media screen and (min-width: 992px) {
+  
+}
+@media screen and (min-width: 1200px) {
+  
 }
