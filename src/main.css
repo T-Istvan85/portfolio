@@ -5,13 +5,15 @@
   --darkgreen: rgb(56, 104, 106);
   --lightgreen: rgb(23, 184, 144);
 }
+.hatter{
 
+}
   
 
 
 
 body {
-  background: black;
+  background:rgb(128, 243, 252), rgb(17, 29, 74);
       
   background-repeat: no-repeat;
   background-position: center;
