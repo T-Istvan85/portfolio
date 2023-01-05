@@ -6,20 +6,17 @@
   --lightgreen: rgb(23, 184, 144);
 }
 .hatter{
-
+  background:rgba(128, 243, 252, 1), rgba(17, 29, 74, 0.5);
+      
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
 }
   
 
 
 
 body {
-  background:rgba(128, 243, 252, 1), rgba(17, 29, 74, 1);
-      
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:cover;
-
-
   color: var(--lightblue);
   font-family: "Goldman", cursive;
   letter-spacing: 2px;
