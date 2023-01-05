@@ -5,18 +5,17 @@
   --darkgreen: rgb(56, 104, 106);
   --lightgreen: rgb(23, 184, 144);
 }
-.hatter{
-  background: url(portfolio/quantum.jpg);
-      
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:cover;
-}
+
   
 
 
 
 body {
+  background: url(../quantum.jpg);
+      
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
   color: var(--lightblue);
   font-family: "Goldman", cursive;
   letter-spacing: 2px;
