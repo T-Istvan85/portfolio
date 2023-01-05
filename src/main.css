@@ -13,7 +13,7 @@
 
 
 body {
-  background:rgb(128, 243, 252), rgb(17, 29, 74);
+  background:rgba(128, 243, 252, 1), rgba(17, 29, 74, 1);
       
   background-repeat: no-repeat;
   background-position: center;
