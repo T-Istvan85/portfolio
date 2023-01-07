@@ -6,13 +6,10 @@
   --lightgreen: rgb(23, 184, 144);
 }
 
-  
-
-
 
 body {
   background: url(../quantum.jpg);
-      
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
@@ -20,6 +17,7 @@ body {
   font-family: "Goldman", cursive;
   letter-spacing: 2px;
   
+/*navigációs sáv -----------------------------------------------------------------------------------------------------------------------------------------------------*/
 
   text-shadow: 1px 1px 2px black, 1px 1px 2px black, 0 0 5px rgb(238, 234, 234),
     0 0 15px rgb(247, 244, 244), 0 0 15px rgb(247, 244, 244),
@@ -87,16 +85,20 @@ background: black;
   color: white;
   border-radius: 50%;
   margin: 1vw;
+  
 }
 .nav_cont ul li a:hover {
   animation: pulse-animation 1s 1;
 }
+
+/*fő oldal név-kép-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+.hatar{
+  margin-bottom: 200px;
+}
+
 .focim {
   display: flex;
   align-items: center;
-  
-  margin-bottom: 300px;
-  
 }
 .fooldal-nev{
   font-size: 3em;
@@ -105,6 +107,8 @@ background: black;
 }
 .fooldal-kep {
   display: none;
+  filter: drop-shadow(1px 1px 15px rgb(255, 255, 255));
+  
   margin-top: 8vh;
   margin-left: auto; 
   margin-right: auto;
@@ -112,20 +116,46 @@ background: black;
   border-radius: 30%;
 }
 
+/*bemutatkozás -------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
+.bemutatkozas_cont p {
+  font-size: 20px;
+}
 
 article {
   margin: 3vw;
 }
-table {
-  border: 2px solid var(--lightblue);
+.ismeretek_cont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  border-radius: 50%;
+
 }
-table tr td {
-  border: 2px solid var(--lightblue);
-  text-align: center;
+.ismeretek_cont p{
+  margin-top: 15px;
+  font-size: 30px;
+  border-radius: 50%;
+  padding: 15px;
 }
- 
+
+.html{
+  background: linear-gradient(rgba(253, 72, 17, 0.7), rgba(250, 123, 5, 0.7));
+  box-shadow: 0px 0px 20px rgb(250, 123, 5);
+}
+.css{
+  background: linear-gradient(rgba(2, 66, 163, 0.7), rgba(5, 132, 250, 0.7),rgba(2, 66, 163, 0.7));
+  box-shadow: 0px 0px 20px rgb(5, 132, 250);
+}
+.javascript{
+  background: linear-gradient(rgba(243, 239, 3, 0.7), rgba(248, 240, 165, 0.7), rgba(243, 239, 3, 0.7));
+  box-shadow: 0px 0px 20px rgb(248, 240, 165);
+}
+
+
+/*projectek -----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .project-cont {
   display: flex;
