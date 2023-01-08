@@ -77,7 +77,7 @@ z-index: 10000;
   border: 1px solid rgb(128, 243, 252);
   border-radius: 20px;
   margin-right: 1vw;
-  background: url(/src/image/atom.png), radial-gradient(rgba(128, 243, 252, 0.7), rgba(128, 243, 252, 0.4),rgba(128, 243, 252, 0.3));
+  background: url(../src/image/atom.png), radial-gradient(rgba(128, 243, 252, 0.7), rgba(128, 243, 252, 0.4),rgba(128, 243, 252, 0.3));
   background-position: center;
   background-repeat: no-repeat;
   background-size:contain;
