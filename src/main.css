@@ -82,16 +82,18 @@ z-index: 10000;
   background-repeat: no-repeat;
   background-size:contain;
   box-shadow: 0px 0px 45px var(--lightblue);
+  
 }
 .nav_lista li {
   font-size: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 .nav-checkbox:checked ~ .nav_lista{
   visibility: visible;
   right:0;
-   
+  animation: pulse-animation 1s 1;
  }
 
 .nav_lista li a {
