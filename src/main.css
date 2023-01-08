@@ -16,80 +16,96 @@ body {
   color: var(--lightblue);
   font-family: "Goldman", cursive;
   letter-spacing: 2px;
-  
-/*navigációs sáv -----------------------------------------------------------------------------------------------------------------------------------------------------*/
-
   text-shadow: 1px 1px 2px black, 1px 1px 2px black, 0 0 5px rgb(238, 234, 234),
     0 0 15px rgb(247, 244, 244), 0 0 15px rgb(247, 244, 244),
     0 0 15px rgb(241, 243, 243), 0 0 15px rgb(245, 248, 248),
     0 0 15px rgb(247, 248, 248);
 }
-.nav_cont{
-  position: fixed;
-width: 100%;
-z-index: 10000;
+
+/*navigációs sáv -----------------------------------------------------------------------------------------------------------------------------------------------------*/
+.atom{
+  display:none
 }
+
 
 .nav-checkbox{
   display: none;
+  
 }
 .nav-checkbox_gomb {
   display: flex;
+  margin-left: 90vw;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  box-shadow: 0px 0px 25px var(--lightblue);
+  border: 1px solid rgb(128, 243, 252);
+  background: radial-gradient(rgba(128, 243, 252, 0.3), rgba(128, 243, 252, 0.4),rgba(128, 243, 252, 0.7));
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   cursor: pointer;
+  border-radius: 20%;
 width: 40px;
 height: 40px;
-background: red;
+
 }
 .nav-checkbox_vonal {
 width: 80%;
+border-radius: 50%;
 height: 3px;
-background: black;
+background: white;
+}
+
+.nav_cont{
+  position: fixed;
+width: 100%;
+z-index: 10000;
+
 }
 
 
-.nav_cont ul {
-  position: static;
+
+.nav_cont .nav_lista {
   display: flex;
+  position: fixed;
+  right: -200px;
+  visibility: hidden;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 15px;
-  border: 2px solid var(--lightblue);
-  border-radius: 50%;
-  
-  margin-left: 1vw;
+  padding: 5px;
+  border: 1px solid rgb(128, 243, 252);
+  border-radius: 20px;
   margin-right: 1vw;
-  background: radial-gradient(
-    rgba(128, 243, 252, 0.1),
-    rgba(128, 243, 252, 0.5),
-    rgba(128, 243, 252, 1)
-  );
-  box-shadow: 100px 0px 45px var(--lightblue), -100px 0px 45px var(--lightblue);
+  background: url(/src/image/atom.png), radial-gradient(rgba(128, 243, 252, 0.7), rgba(128, 243, 252, 0.4),rgba(128, 243, 252, 0.3));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  box-shadow: 0px 0px 45px var(--lightblue);
 }
-.nav_cont ul li {
+.nav_lista li {
   font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
+.nav-checkbox:checked ~ .nav_lista{
+  visibility: visible;
+  right:0;
+   
+ }
 
-.atom {
-  
-  width: 70px;
-  height: 70px;
-  animation: spin 15s infinite;
-  animation-timing-function: linear;
-}
-
-.nav_cont ul li a {
+.nav_lista li a {
   background: rgba(250, 247, 247, 0.1);
-  color: white;
+  color:rgb(6, 180, 233);
   border-radius: 50%;
-  margin: 1vw;
+  
   
 }
-.nav_cont ul li a:hover {
+.nav_lista li a:hover {
   animation: pulse-animation 1s 1;
 }
+
+
 
 /*fő oldal név-kép-----------------------------------------------------------------------------------------------------------------------------------------------------*/
 .hatar{
@@ -175,10 +191,69 @@ article {
 .project img {
   width: 300px;
 }
+
+
+
+
 @media screen and (min-width: 576px) {
   
 }
 @media screen and (min-width: 768px) {
+
+  .nav-checkbox_gomb{
+    display: none;
+  }
+
+.nav_cont{
+position: fixed;
+width: 100%;
+z-index: 10000;
+}
+
+.nav_cont .nav_lista {
+    display: flex;
+    visibility: visible;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    border: 2px solid var(--lightblue);
+    border-radius: 50%;
+    right:0;
+  left: 0;
+  
+    margin-left: 1vw;
+    margin-right: 1vw;
+    background: radial-gradient(
+      rgba(128, 243, 252, 0.1),
+      rgba(128, 243, 252, 0.5),
+      rgba(128, 243, 252, 1)
+    );
+    box-shadow: 100px 0px 45px var(--lightblue), -100px 0px 45px var(--lightblue);
+  }
+  .nav_lista li{
+    font-size: 20px;
+  }
+  
+  .atom {
+    display: block;
+    width: 70px;
+    height: 70px;
+    animation: spin 15s infinite;
+    animation-timing-function: linear;
+  }
+  
+  .nav_lista li a{
+    background: rgba(250, 247, 247, 0.1);
+    color: white;
+    border-radius: 50%;
+    margin: 1vw;
+    
+  }
+  .nav_lista li a:hover {
+    animation: pulse-animation 1s 1;
+  }
+
   .fooldal-kep {
     display: block;
   };
