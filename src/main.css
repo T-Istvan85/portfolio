@@ -1,18 +1,15 @@
 :root {
   --gray: rgb(42, 61, 69);
-  
-  --lightblue: #80f3fc;
-  
-  
-}
 
+  --lightblue: rgb(128, 243, 252);
+}
 
 body {
   background: url(../src/image/quantum.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
-  background-size:cover;
+  background-size: cover;
   color: var(--lightblue);
   font-family: "Goldman", cursive;
   letter-spacing: 2px;
@@ -23,14 +20,12 @@ body {
 }
 
 /*navigációs sáv -----------------------------------------------------------------------------------------------------------------------------------------------------*/
-.react-kep{
-  display:none
+.react-kep {
+  display: none;
 }
 
-
-.nav-checkbox{
+.nav-checkbox {
   display: none;
-  
 }
 .nav-checkbox_gomb {
   display: flex;
@@ -39,31 +34,31 @@ body {
   margin-bottom: 5px;
   box-shadow: 0px 0px 25px var(--lightblue);
   border: 1px solid rgb(128, 243, 252);
-  background: radial-gradient(rgba(128, 243, 252, 0.3), rgba(128, 243, 252, 0.4),rgba(128, 243, 252, 0.7));
+  background: radial-gradient(
+    rgba(128, 243, 252, 0.3),
+    rgba(128, 243, 252, 0.4),
+    rgba(128, 243, 252, 0.7)
+  );
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   cursor: pointer;
   border-radius: 20%;
-width: 40px;
-height: 40px;
-
+  width: 40px;
+  height: 40px;
 }
 .nav-checkbox_vonal {
-width: 80%;
-border-radius: 50%;
-height: 3px;
-background: white;
+  width: 80%;
+  border-radius: 50%;
+  height: 3px;
+  background: white;
 }
 
-.nav_cont{
+.nav_cont {
   position: fixed;
-width: 100%;
-z-index: 10000;
-
+  width: 100%;
+  z-index: 10000;
 }
-
-
 
 .nav_cont .nav_lista {
   display: flex;
@@ -77,12 +72,16 @@ z-index: 10000;
   border: 1px solid rgb(128, 243, 252);
   border-radius: 20px;
   margin-right: 1vw;
-  background: url(../src/image/atom.png), radial-gradient(rgba(128, 243, 252, 0.7), rgba(128, 243, 252, 0.4),rgba(128, 243, 252, 0.3));
+  background: url(../src/image/atom.png),
+    radial-gradient(
+      rgba(128, 243, 252, 0.7),
+      rgba(128, 243, 252, 0.4),
+      rgba(128, 243, 252, 0.3)
+    );
   background-position: center;
   background-repeat: no-repeat;
-  background-size:contain;
+  background-size: contain;
   box-shadow: 0px 0px 45px var(--lightblue);
-  
 }
 .nav_lista li {
   font-size: 20px;
@@ -90,35 +89,31 @@ z-index: 10000;
   margin-bottom: 20px;
 }
 
-.nav-checkbox:checked ~ .nav_lista{
+.nav-checkbox:checked ~ .nav_lista {
   visibility: visible;
-  right:0;
+  right: 0;
   animation: pulse-animation 1s 1;
- }
+}
 
 .nav_lista li a {
   background: rgba(250, 247, 247, 0.1);
-  color:rgb(6, 180, 233);
+  color: rgb(6, 180, 233);
   border-radius: 50%;
-  
-  
 }
 .nav_lista li a:hover {
   animation: pulse-animation 1s 1;
 }
 
-
-
 /*fő oldal név-kép-----------------------------------------------------------------------------------------------------------------------------------------------------*/
-.hatar{
-  margin-bottom: 300px;
+.hatar {
+  margin-bottom: 30vh;
 }
 
 .focim {
   display: flex;
   align-items: center;
 }
-.fooldal-nev{
+.fooldal-nev {
   font-size: 2.5em;
   margin-top: 115px;
   margin-left: 10vw;
@@ -126,16 +121,15 @@ z-index: 10000;
 .fooldal-kep {
   display: none;
   filter: drop-shadow(1px 1px 15px rgb(255, 255, 255));
-  
+
   margin-top: 8vh;
-  margin-left: auto; 
+  margin-left: auto;
   margin-right: auto;
   width: 20em;
   border-radius: 30%;
 }
 
 /*bemutatkozás -------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
 
 .bemutatkozas_cont p {
   font-size: 20px;
@@ -144,79 +138,233 @@ z-index: 10000;
 article {
   margin: 3vw;
 }
-.ismeretek_cont{
+.ismeretek_cont {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 30px;
   border-radius: 50%;
-
 }
-.ismeretek_cont p{
+.ismeretek_cont p {
   margin-top: 25px;
   font-size: 0.9em;
   border-radius: 50%;
-  padding: 30px;
+  padding: 20px;
   letter-spacing: 1vw;
 }
 
-.html{
-  background: radial-gradient(rgba(253, 72, 17, 1),rgba(253, 72, 17, 0.7),rgba(253, 72, 17, 0.1));
+.html {
+  background: radial-gradient(
+    rgba(253, 72, 17, 1),
+    rgba(253, 72, 17, 0.7),
+    rgba(253, 72, 17, 0.1)
+  );
   box-shadow: 0px 0px 20px rgb(253, 72, 17);
   color: rgb(253, 72, 17);
 }
-.css{
-  background: radial-gradient(rgba(5, 132, 250, 1), rgba(5, 132, 250, 0.7),rgba(5, 132, 250, 0.1));
+.css {
+  background: radial-gradient(
+    rgba(5, 132, 250, 1),
+    rgba(5, 132, 250, 0.7),
+    rgba(5, 132, 250, 0.1)
+  );
   box-shadow: 0px 0px 20px rgb(5, 132, 250);
-  color: rgb(5, 132, 250)
+  color: rgb(5, 132, 250);
 }
-.javascript{
-  background: radial-gradient(rgba(211, 207, 1, 1), rgba(211, 207, 1, 0.7), rgba(211, 207, 1, 0.1));
+.javascript {
+  background: radial-gradient(
+    rgba(211, 207, 1, 1),
+    rgba(211, 207, 1, 0.7),
+    rgba(211, 207, 1, 0.1)
+  );
   box-shadow: 0px 0px 20px rgb(211, 207, 1);
   color: rgb(250, 246, 2);
 }
 
-
 /*projectek -----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.munka{
+  margin-left: 10px;
+}
 
 .project-cont {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-
-  border: 2px solid white;
   margin-top: 30px;
-
   width: fit-content;
   width: fit-content;
   height: fit-content;
 }
 .project {
-  border: 2px solid var(--lightblue);
+  display: flex;
+  flex-direction: column;
+  width: 23em;
+  margin-left: 0.5vw;
+  margin-bottom: 20px;
 }
 .project img {
+  border: 2px solid var(--lightblue);
   width: 23em;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgb(255, 255, 255);
+}
+.project h3 {
+  font-size: 20px;
+}
+/*ikonok-----------------------------------------------------------------------------------------*/
+.fa-github {
+  color: var(--lightblue);
+  font-size: 40px;
+}
+.fa-html5 {
+  font-size: 40px;
+}
+.fa-css3-alt {
+  font-size: 40px;
+}
+.fa-square-js {
+  font-size: 40px;
 }
 
+/*kapcsolat---------------------------------------------------------------------*/
 
-
-
-@media screen and (min-width: 576px) {
-  
+.kapcsolat-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+.kapcsolat-cont fieldset {
+  font-size: 1em;
+  border: none;
+}
+.kapcsolat-cont form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+input[type="text"]
+{
+    font-size:17px;
+}
+input[type="email"]
+{
+    font-size:17px;
+}
+
+.kapcsolat-cont input {
+  box-shadow: 0px 0px 20px rgb(255, 255, 255);
+  width: 200px;
+  height: 40px;
+  margin-top: 20px;
+  border: 2px solid rgb(128, 243, 252);
+  margin-bottom: 50px;
+  border-radius: 8px;
+  background: radial-gradient(
+    rgba(243, 245, 245, 0.1),
+    rgba(239, 243, 243, 0.8)
+  );
+}
+::placeholder {
+  color: black;
+  font-size: 20px;
+}
+.kapcsolat-cont textarea {
+  border-radius: 6px;
+  width: 50vw;
+  background: radial-gradient(
+    rgba(243, 245, 245, 0.1),
+    rgba(239, 243, 243, 0.8)
+  );
+  border: 1px solid rgb(128, 243, 252);
+  box-shadow: 0px 0px 20px rgb(255, 255, 255);
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.kapcsolat_gomb {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  color: rgb(32, 90, 250);
+  font-family: "Goldman", cursive;
+  text-shadow: 1px 1px 2px black, 1px 1px 2px black, 0 0 5px rgb(238, 234, 234),
+    0 0 15px rgb(247, 244, 244), 0 0 15px rgb(247, 244, 244),
+    0 0 15px rgb(241, 243, 243), 0 0 15px rgb(245, 248, 248),
+    0 0 15px rgb(247, 248, 248);
+  background: radial-gradient(
+    rgba(128, 243, 252, 0.1),
+    rgba(128, 243, 252, 0.3),
+    rgba(128, 243, 252, 1)
+  );
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 50%;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 150px;
+}
+
+.kapcsolat_gomb:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #008cff,
+    #028799,
+    #00e1ff,
+    #f5f7f5,
+    #00ffd5,
+    #2649f8,
+    #f3f2f5,
+    #00ffff,
+    #0066ff
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 50%;
+}
+
+.kapcsolat_gomb:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    rgba(128, 243, 252, 0.1),
+    rgba(128, 243, 252, 0.3)
+  );
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+}
+
+/*reszponzív kép-----------------------------------------------------------------*/
+
 @media screen and (min-width: 768px) {
-
-  .nav-checkbox_gomb{
+  .nav-checkbox_gomb {
     display: none;
   }
 
-.nav_cont{
-position: fixed;
-width: 100%;
-z-index: 10000;
-}
+  .nav_cont {
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+  }
 
-.nav_cont .nav_lista {
+  .nav_cont .nav_lista {
     display: flex;
     visibility: visible;
     flex-direction: row;
@@ -225,8 +373,8 @@ z-index: 10000;
     border: 2px solid var(--lightblue);
     border-radius: 50%;
     right: 0;
-  left: 0;
-  margin-top: 5px;
+    left: 0;
+    margin-top: 5px;
     margin-left: 1vw;
     margin-right: 1vw;
     background: radial-gradient(
@@ -234,12 +382,13 @@ z-index: 10000;
       rgba(128, 243, 252, 0.5),
       rgba(128, 243, 252, 1)
     );
-    box-shadow: 100px 0px 45px var(--lightblue), -100px 0px 45px var(--lightblue);
+    box-shadow: 100px 0px 45px var(--lightblue),
+      -100px 0px 45px var(--lightblue);
   }
-  .nav_lista li{
+  .nav_lista li {
     font-size: 20px;
   }
-  
+
   .react-kep {
     display: block;
     width: 70px;
@@ -247,13 +396,12 @@ z-index: 10000;
     animation: spin 15s infinite;
     animation-timing-function: linear;
   }
-  
-  .nav_lista li a{
+
+  .nav_lista li a {
     background: rgba(250, 247, 247, 0.1);
     color: white;
     border-radius: 50%;
     margin: 1vw;
-    
   }
   .nav_lista li a:hover {
     animation: pulse-animation 1s 1;
@@ -261,11 +409,5 @@ z-index: 10000;
 
   .fooldal-kep {
     display: block;
-  };
-}
-@media screen and (min-width: 992px) {
-  
-}
-@media screen and (min-width: 1200px) {
-  
-}
+  }
+} ;
