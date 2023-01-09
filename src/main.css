@@ -192,7 +192,6 @@ article {
   justify-content: space-around;
   margin-top: 30px;
   width: fit-content;
-  width: fit-content;
   height: fit-content;
 }
 .project {
@@ -410,4 +409,4 @@ input[type="email"]
   .fooldal-kep {
     display: block;
   }
-} ;
+}
