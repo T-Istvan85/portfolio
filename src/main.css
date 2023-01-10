@@ -1,11 +1,11 @@
 :root {
-  --gray: rgb(92, 91, 91);
+  --gray: #5c5b5b;
 
-  --lightblue: rgb(128, 243, 252);
+  --lightblue: #80f3fc;
 }
 
 body {
-  background: rgb(109, 108, 108);
+  background: #474646;
   color: var(--lightblue);
   font-family: "Goldman", cursive;
   letter-spacing: 2px;
