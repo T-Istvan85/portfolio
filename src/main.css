@@ -229,11 +229,9 @@ article {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 30px;
 }
-.kapcsolat-cont fieldset {
-  font-size: 1em;
-  border: none;
-}
+
 .kapcsolat-cont form {
   display: flex;
   align-items: center;
