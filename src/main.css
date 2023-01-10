@@ -6,10 +6,6 @@
 
 body {
   background: rgb(109, 108, 108);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   color: var(--lightblue);
   font-family: "Goldman", cursive;
   letter-spacing: 2px;
