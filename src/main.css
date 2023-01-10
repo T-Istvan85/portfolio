@@ -71,9 +71,9 @@ body {
   margin-right: 1vw;
   background: url(../src/image/atom.png),
     radial-gradient(
-      rgba(128, 243, 252, 0.7),
-      rgba(128, 243, 252, 0.4),
-      rgba(128, 243, 252, 0.3)
+      rgba(128, 243, 252, 0.9),
+      rgba(128, 243, 252, 0.6),
+      rgba(128, 243, 252, 0.4)
     );
   background-position: center;
   background-repeat: no-repeat;
@@ -94,7 +94,7 @@ body {
 
 .nav_lista li a {
   background: rgba(250, 247, 247, 0.1);
-  color: rgb(6, 180, 233);
+  color: rgb(3, 105, 201);
   border-radius: 50%;
 }
 .nav_lista li a:hover {
