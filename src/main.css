@@ -124,7 +124,7 @@ section{
 .fooldal-kep {
   display: none;
   filter: drop-shadow(1px 1px 15px rgb(255, 255, 255));
-opacity: 65%;
+opacity: 70%;
   margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
@@ -314,7 +314,7 @@ input[type="email"]
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin-bottom: 150px;
+  
 }
 
 .kapcsolat_gomb:before {
@@ -344,6 +344,25 @@ input[type="email"]
   transition: opacity 0.3s ease-in-out;
   border-radius: 50%;
 }
+.kapcsolat_ikonok{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  align-content: space-around;
+  
+}
+.kapcsolat_ikonok a{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: -200px;
+color: var(--lightblue);
+}
+.kapcsolat_ikonok i{
+  
+  font-size: 50px;
+  
+}
+
 
 .kapcsolat_gomb:after {
   z-index: -1;
@@ -359,6 +378,7 @@ input[type="email"]
   top: 0;
   border-radius: 50%;
 }
+
 
 /*reszponzív kép-----------------------------------------------------------------*/
 
