@@ -1,5 +1,5 @@
 :root {
-  --gray: #5c5b5b;
+  --darkblue: #0B132B;
 
   --lightblue: #80f3fc;
 }
@@ -96,26 +96,34 @@ body {
 .nav_lista li a:hover {
   animation: pulse-animation 1s 1;
 }
+article {
+  padding-top: 150px;
+  margin: 3vw;
+}
+section{
+  padding-top: 150px;
+  margin: 3vw;
+}
 
 /*fő oldal név-kép-----------------------------------------------------------------------------------------------------------------------------------------------------*/
-.hatar {
-  margin-bottom: 30vh;
-}
+
 
 .focim {
   display: flex;
   align-items: center;
 }
 .fooldal-nev {
-  font-size: 2.5em;
+  
+ 
+  font-size: 3em;
   margin-top: 115px;
-  margin-left: 10vw;
+  margin-left: 18vw;
 }
 .fooldal-kep {
   display: none;
   filter: drop-shadow(1px 1px 15px rgb(255, 255, 255));
 
-  margin-top: 8vh;
+  margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
   width: 20em;
@@ -123,14 +131,17 @@ body {
 }
 
 /*bemutatkozás -------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.bemutatkozas_cont{
+  margin-top: 0;
+}
+
 
 .bemutatkozas_cont p {
   font-size: 25px;
+  
 }
 
-article {
-  margin: 3vw;
-}
+
 .ismeretek_cont {
   display: flex;
   flex-direction: column;
@@ -191,7 +202,8 @@ article {
   display: flex;
   flex-direction: column;
   width: 23em;
-  margin-left: 0.5vw;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 20px;
 }
 .project img {
@@ -247,10 +259,10 @@ input[type="email"]
 
 .kapcsolat-cont input {
   box-shadow: 0px 0px 20px rgb(255, 255, 255);
-  width: 200px;
+  width: 40vw;
   height: 40px;
   margin-top: 10px;
-  padding: 4px;
+  padding: 6px;
   border: 2px solid rgb(128, 243, 252);
   margin-bottom: 5px;
   border-radius: 8px;
