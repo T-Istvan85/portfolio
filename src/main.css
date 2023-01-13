@@ -5,7 +5,7 @@
 }
 
 body {
-  background:url(../src/image/dark.jpg);
+  background: url(../src/image/dark.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,6 +14,7 @@ body {
   font-family: "Goldman", cursive;
   letter-spacing: 2px;
   text-shadow: 1px 1px 2px black, 1px 1px 2px black;
+  user-select: none;
 }
 
 /*navigációs sáv mobil -----------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -24,9 +25,9 @@ body {
 .nav-checkbox {
   display: none;
 }
-.nav-checkbox_gomb {
+.nav-checkbox-gomb {
   display: flex;
-  margin-left: 86vw;
+  margin-left: 87%;
   margin-top: 10px;
   margin-bottom: 5px;
   box-shadow: 0px 0px 25px var(--lightblue);
@@ -40,23 +41,22 @@ body {
   width: 40px;
   height: 40px;
 }
-.nav-checkbox_vonal {
+.nav-checkbox-vonal {
   width: 80%;
   border-radius: 50%;
   height: 3px;
   background: white;
 }
 
-.nav_cont {
+.nav-cont {
   position: fixed;
   width: 100%;
   z-index: 10000;
 }
 
-.nav_cont .nav_lista {
+.nav-cont .nav-lista {
   display: flex;
   position: fixed;
-  right: -200px;
   visibility: hidden;
   flex-direction: column;
   justify-content: space-around;
@@ -66,85 +66,85 @@ body {
   border-radius: 20px;
   margin-right: 1vw;
   background: linear-gradient(
-    90deg,
-    rgba(19, 19, 18, 0.9) 100%,
-    rgba(10, 10, 10, 0.9) 100%
-  ), url(../src/image/atom.png)rgb(19, 18, 18);
+      90deg,
+      rgba(19, 19, 18, 0.9) 100%,
+      rgba(10, 10, 10, 0.9) 100%
+    ),
+    url(../src/image/atom.png) rgb(19, 18, 18);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   box-shadow: 0px 0px 45px var(--lightblue);
 }
-.nav_lista li {
+.nav-lista li {
   font-size: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.nav-checkbox:checked ~ .nav_lista {
+.nav-checkbox:checked ~ .nav-lista {
   visibility: visible;
   right: 0;
   animation: pulse-animation 1s 1;
 }
 
-.nav_lista li a {
-  color:var(--lightblue);
+.nav-lista li a {
+  color: var(--lightblue);
 }
-.nav_lista li a:hover {
+.nav-lista li a:hover {
   color: aliceblue;
 }
-article {
+div {
   padding-top: 150px;
-  margin: 3vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
-section{
+section {
   padding-top: 150px;
-  margin: 3vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 
 /*fő oldal név-kép-----------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-
-.focim {
+.focim-cont {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  padding-top: 15vw;
+  margin-top: 0;
 }
 .fooldal-nev {
   font-size: 3em;
-  margin-top: 115px;
-  margin-left: 18vw;
+  margin-left: 6vw;
+  margin-right: 1vw;
+  color: rgb(31, 29, 29);
+  text-shadow: 0 0 4px var(--lightblue), -4px 4px 4px var(--lightblue);
 }
+
 .fooldal-kep {
-  display: none;
-  
-opacity: 70%;
-  margin-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20em;
-  border-radius: 80px;
+  filter: drop-shadow(0 0 15px rgb(251, 252, 252));
+  margin-top: 10vw;
+  width: 85vw;
 }
 
 /*bemutatkozás -------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.bemutatkozas_cont{
-  margin-top: 0;
+.rolam-cont {
+  margin-top: 1em;
 }
 
-
-.bemutatkozas_cont p {
+.rolam-cont p {
   font-size: 25px;
-  
 }
 
-
-.ismeretek_cont {
+.ismeretek-cont {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 30px;
   border-radius: 50%;
 }
-.ismeretek_cont p {
+.ismeretek-cont p {
   margin-top: 25px;
   font-size: 0.9em;
   border-radius: 50%;
@@ -181,7 +181,7 @@ opacity: 70%;
 }
 
 /*projectek -----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.munka{
+.munka {
   margin-left: 10px;
 }
 
@@ -189,17 +189,18 @@ opacity: 70%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 30px;
   width: fit-content;
   height: fit-content;
+  padding-top: 2em;
 }
 .project {
   display: flex;
   flex-direction: column;
   width: 23em;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-bottom: 2vw;
+  padding: 0;
 }
 .project img {
   border: 2px solid var(--lightblue);
@@ -234,7 +235,7 @@ opacity: 70%;
   align-items: center;
   font-size: 25px;
 }
-.kapcsolat-cont fieldset{
+.kapcsolat-cont fieldset {
   border: none;
 }
 
@@ -243,13 +244,11 @@ opacity: 70%;
   align-items: center;
   flex-direction: column;
 }
-input[type="text"]
-{
-    font-size:17px;
+input[type="text"] {
+  font-size: 17px;
 }
-input[type="email"]
-{
-    font-size:17px;
+input[type="email"] {
+  font-size: 17px;
 }
 
 .kapcsolat-cont input {
@@ -284,7 +283,7 @@ input[type="email"]
   font-size: 20px;
 }
 
-.kapcsolat_gomb {
+.kapcsolat-gomb {
   padding: 0.6em 2em;
   border: none;
   outline: none;
@@ -307,10 +306,9 @@ input[type="email"]
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  
 }
 
-.kapcsolat_gomb:before {
+.kapcsolat-gomb:before {
   content: "";
   background: linear-gradient(
     45deg,
@@ -337,27 +335,23 @@ input[type="email"]
   transition: opacity 0.3s ease-in-out;
   border-radius: 50%;
 }
-.kapcsolat_ikonok{
+.kapcsolat-ikonok {
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   align-content: space-around;
-  
 }
-.kapcsolat_ikonok a{
+.kapcsolat-ikonok a {
   margin-left: 20px;
   margin-right: 20px;
   margin-top: -200px;
-color: var(--lightblue);
+  color: var(--lightblue);
 }
-.kapcsolat_ikonok i{
-  
+.kapcsolat-ikonok i {
   font-size: 50px;
-  
 }
 
-
-.kapcsolat_gomb:after {
+.kapcsolat-gomb:after {
   z-index: -1;
   content: "";
   position: absolute;
@@ -372,38 +366,35 @@ color: var(--lightblue);
   border-radius: 50%;
 }
 
-
 /*reszponzív kép-----------------------------------------------------------------*/
 
-@media screen and (min-width: 768px) {
-  .nav-checkbox_gomb {
+@media screen and (min-width: 929px) {
+  .nav-checkbox-gomb {
     display: none;
   }
 
-  .nav_cont {
+  .nav-cont {
     position: fixed;
     width: 100%;
     z-index: 10000;
   }
 
-  .nav_cont .nav_lista {
+  .nav-cont .nav-lista {
     display: flex;
     visibility: visible;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     border: 2px solid var(--lightblue);
-    
     right: 0;
     left: 0;
     margin-top: 5px;
     margin-left: 1vw;
     margin-right: 1vw;
     background: rgb(19, 18, 18);
-    box-shadow: 0px 0px 15px var(--lightblue),
-      0px 0px 25px var(--lightblue);
+    box-shadow: 0px 0px 15px var(--lightblue), 0px 0px 25px var(--lightblue);
   }
-  .nav_lista li {
+  .nav-lista li {
     font-size: 23px;
   }
 
@@ -411,21 +402,27 @@ color: var(--lightblue);
     display: block;
     width: 55 px;
     height: 55px;
-  
   }
 
-  .nav_lista li a {
-    
+  .nav-lista li a {
     color: var(--lightblue);
-    
     margin: 1vw;
   }
-  .nav_lista li a:hover {
+  .nav-lista li a:hover {
     color: aliceblue;
-    
   }
-
+  .focim-cont {
+    flex-direction: row;
+    padding-top: 10em;
+  }
+  .fooldal-nev {
+    font-size: 3.5em;
+  }
   .fooldal-kep {
     display: block;
+    width: 45vw;
+    margin-top: 1vw;
+    margin-left: auto;
+    margin-right: 4vw;
   }
 }

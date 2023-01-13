@@ -15,7 +15,7 @@
 
   <body>
     <header>
-      <nav class="nav_cont">
+      <nav class="nav-cont">
         <input
           type="checkbox"
           name="box"
@@ -24,18 +24,19 @@
         />
 
         <label for="nav-checkbox">
-          <span class="nav-checkbox_gomb">
-            <span class="nav-checkbox_vonal"></span>
-            <span class="nav-checkbox_vonal"></span>
-            <span class="nav-checkbox_vonal"></span>
+          <span class="nav-checkbox-gomb">
+            <span class="nav-checkbox-vonal"></span>
+            <span class="nav-checkbox-vonal"></span>
+            <span class="nav-checkbox-vonal"></span>
           </span>
         </label>
-        <ul class="nav_lista">
-          <li><a href="#bemutatkozas">Bemutatkozás</a></li>
-          <li><a href="#ismeretek">Ismereteim</a></li>
+        <ul class="nav-lista">
           <li>
             <img class="react-kep" src="./src/image/atom.png" alt="react" />
           </li>
+          <li><a href="#bemutatkozas">Bemutatkozás</a></li>
+          <li><a href="#rolam">Rólam</a></li>
+          <li><a href="#ismeretek">Ismereteim</a></li>
           <li><a href="#munkak">Munkáim</a></li>
           <li><a href="#kapcsolat">Kapcsolat</a></li>
         </ul>
@@ -43,15 +44,15 @@
     </header>
 
     <main>
-      <div id="bemutatkozas" class="focim">
+      <div id="bemutatkozas" class="focim-cont">
         <h1 class="fooldal-nev">
           Tóth István János <br />
           <strong>Frontend Webfejlesztő</strong>
         </h1>
-        <img class="fooldal-kep" src="./src/image/en_foto.png" alt="en" />
+        <img class="fooldal-kep" src="./src/image/main-photo.png" alt="en" />
       </div>
 
-      <article class="bemutatkozas_cont">
+      <div id="rolam" class="rolam-cont">
         <p>
           Helló, a nevem István , és webfejlesztő vagyok. Szenvedélyem a
           felhasználóbarát és vizuálisan vonzó weboldalak és webalkalmazások
@@ -62,17 +63,16 @@
           tudásomat és tapasztalatomat azzal a céllal, hogy jól használható és
           esztétikus weboldalakat hozzak létre a megbízóim számára.
         </p>
-      </article>
+      </div>
 
-      <article id="ismeretek" class="ismeretek_cont">
+      <section id="ismeretek" class="ismeretek-cont">
         <h2>Fejlesztői ismereteim:</h2>
-
         <p class="html">HTML<i class="fa fa-html5" aria-hidden="true"></i></p>
         <p class="css">CSS<i class="fa-brands fa-css3-alt"></i></p>
         <p class="javascript">
           JAVASCRIPT<i class="fa-brands fa-square-js"></i>
         </p>
-      </article>
+      </section>
 
       <section id="munkak">
         <h2 class="munka">Munkáim:</h2>
@@ -133,7 +133,8 @@
             <h3>
               PROJECT
               <a href="https://github.com/" target="_blank"
-                ><i class="fa-brands fa-github"></i></a>
+                ><i class="fa-brands fa-github"></i
+              ></a>
             </h3>
             <p><i class="fa fa-html5" aria-hidden="true"></i>HTML</p>
             <p><i class="fa-brands fa-css3-alt"></i>CSS</p>
@@ -158,7 +159,7 @@
         </div>
       </section>
 
-      <article id="kapcsolat" class="kapcsolat-cont">
+      <section id="kapcsolat" class="kapcsolat-cont">
         <fieldset>
           <legend><h2>Kapcsolat:</h2></legend>
           <p>
@@ -177,20 +178,21 @@
               placeholder="Küldj üzenetet"
             ></textarea>
             <br />
-            <button type="submit" role="button" class="kapcsolat_gomb">
+            <button type="submit" role="button" class="kapcsolat-gomb">
               KÜLDÉS
             </button>
           </form>
         </fieldset>
-      </article>
-      <section class="kapcsolat_ikonok">
+      </section>
+      <div class="kapcsolat-ikonok">
         <a href="https://github.com/" target="_blank"
-          ><i class="fa-brands fa-square-github"></i></a>
-          
+          ><i class="fa-brands fa-square-github"></i
+        ></a>
+
         <a href="https://www.linkedin.com/in/istvan-t-093655261"
           ><i class="fa-brands fa-linkedin" target="_blank"></i
         ></a>
-      </section>
+      </div>
     </main>
     <footer>
       <p>Tóth István János © copyright 2022</p>
