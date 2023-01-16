@@ -95,14 +95,12 @@ body {
   color: aliceblue;
 }
 div {
-  padding-top: 150px;
-  margin-left: 1vw;
-  margin-right: 1vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 section {
-  padding-top: 150px;
-  margin-left: 1vw;
-  margin-right: 1vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 /*fő oldal név-kép-----------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -111,15 +109,16 @@ section {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 15vw;
+  padding-top: 10vw;
   margin-top: 0;
+  margin-bottom: 25vw;
 }
 .fooldal-nev {
   font-size: 3em;
-  margin-left: 6vw;
+  padding-left: 3vw;
   margin-right: 1vw;
   color: rgb(31, 29, 29);
-  text-shadow: 0 0 4px var(--lightblue), -4px 4px 4px var(--lightblue);
+  text-shadow: 0 0 4px var(--lightblue),0 0 4px var(--lightblue), -4px 4px 4px var(--lightblue);
 }
 
 .fooldal-kep {
@@ -129,12 +128,24 @@ section {
 }
 
 /*bemutatkozás -------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.rolam-cim {
+  padding-top: 24vh;
+  margin-left: 1%;
+}
+
 .rolam-cont {
-  margin-top: 1em;
+  display: flex;
+  align-items: flex-start;
+  box-shadow: 0px 0px 15px var(--lightblue), 0px 0px 25px var(--lightblue);
+  border: 2px solid var(--lightblue);
+  border-radius: 15px;
+  background: var(--black);
 }
 
 .rolam-cont p {
+  padding: 2vw;
   font-size: 25px;
+  font-family: "Rajdhani", sans-serif;
 }
 
 .ismeretek-cont {
@@ -182,29 +193,29 @@ section {
 
 /*projectek -----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .munka {
-  margin-left: 10px;
+  margin-left: 5vw;
 }
 
 .project-cont {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: fit-content;
+
   height: fit-content;
   padding-top: 2em;
 }
 .project {
   display: flex;
   flex-direction: column;
-  width: 23em;
+
   margin-left: 2vw;
   margin-right: 2vw;
-  margin-bottom: 2vw;
+  margin-bottom: 5vw;
   padding: 0;
 }
 .project img {
   border: 2px solid var(--lightblue);
-  width: 23em;
+  width: 75vw;
   border-radius: 20px;
   box-shadow: 0px 0px 20px rgb(255, 255, 255);
 }
@@ -366,18 +377,13 @@ input[type="email"] {
   border-radius: 50%;
 }
 
-/*reszponzív kép-----------------------------------------------------------------*/
+/* desktop reszponzív kép-----------------------------------------------------------------*/
 
-@media screen and (min-width: 929px) {
+@media screen and (min-width: 900px) {
   .nav-checkbox-gomb {
     display: none;
   }
 
-  .nav-cont {
-    position: fixed;
-    width: 100%;
-    z-index: 10000;
-  }
 
   .nav-cont .nav-lista {
     display: flex;
@@ -400,8 +406,8 @@ input[type="email"] {
 
   .react-kep {
     display: block;
-    width: 55 px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
   }
 
   .nav-lista li a {
@@ -410,19 +416,34 @@ input[type="email"] {
   }
   .nav-lista li a:hover {
     color: aliceblue;
+    text-shadow: aliceblue 0px 0px 5px;
   }
+
   .focim-cont {
     flex-direction: row;
     padding-top: 10em;
   }
   .fooldal-nev {
     font-size: 3.5em;
+    padding-left: 0;
   }
   .fooldal-kep {
     display: block;
     width: 45vw;
     margin-top: 1vw;
     margin-left: auto;
-    margin-right: 4vw;
+    padding-right: 5vw;
+  }
+  .rolam-cim {
+    padding-top: 7rem;}
+
+  .munka {
+    margin-left: 15vw;
+  }
+  .project {
+    width: 50vmax;
+  }
+  .project img {
+    width: 50vmax;
   }
 }
