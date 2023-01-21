@@ -15,7 +15,6 @@ body {
   letter-spacing: 2px;
   text-shadow: 1px 1px 2px black, 1px 1px 2px black;
   user-select: none;
-  
 }
 
 /*navigációs sáv mobil -----------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -24,10 +23,8 @@ body {
 }
 
 .nav-checkbox {
-  display:none;
-  
+  display: none;
 }
-
 
 .nav-checkbox-gomb {
   display: flex;
@@ -44,7 +41,6 @@ body {
   border-radius: 20%;
   width: 3rem;
   height: 3rem;
-  overflow: hidden;
 }
 .nav-checkbox-vonal {
   width: 80%;
@@ -86,24 +82,23 @@ body {
   font-size: 1em;
   margin-top: 1em;
   margin-bottom: 20px;
-  
 }
 
 .nav-checkbox:checked ~ .nav-lista {
   visibility: visible;
   right: 0;
-  margin-right:1vw;
+  margin-right: 1vw;
   animation: pulse-animation 1s 1;
 }
 
 .nav-lista li a {
   color: var(--lightblue);
+  
 }
 .nav-lista li a:hover {
   color: aliceblue;
+  
 }
-
-
 
 /*fő oldal név-kép-----------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -120,7 +115,8 @@ body {
   padding-left: 3vw;
   margin-right: 1vw;
   color: rgb(31, 29, 29);
-  text-shadow: 0 0 4px var(--lightblue),0 0 4px var(--lightblue), -4px 4px 4px var(--lightblue);
+  text-shadow: 0 0 4px var(--lightblue), 0 0 4px var(--lightblue),
+    -4px 4px 4px var(--lightblue);
 }
 
 .fooldal-kep {
@@ -130,7 +126,7 @@ body {
 }
 
 /*bemutatkozás -------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.rolam-cont{
+.rolam-cont {
   height: 100vh;
   padding-top: 8vh;
   margin-bottom: 75vh;
@@ -149,13 +145,11 @@ body {
   margin-left: 1vw;
   margin-right: 1vw;
 }
-.rolam-pic{
+.rolam-pic {
   width: 75vw;
   height: 40vw;
   margin-left: 16vw;
   margin-right: 10vw;
-  
-  
 }
 
 .rolam-szoveg p {
@@ -167,17 +161,14 @@ body {
 .ismeretek-cont {
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   padding-top: 8vh;
   margin-left: 10vw;
   margin-right: 10vw;
   margin-bottom: 80vh;
 }
-.ismeretek-cont h2{
-  position:absolute;
-  
-  
-  
+.ismeretek-cont h2 {
+  position: absolute;
 }
 .ismeretek-cont div {
   display: flex;
@@ -188,20 +179,18 @@ body {
   margin-top: 5vh;
   margin-left: 1vw;
   margin-right: 1vw;
-  background: linear-gradient(rgb(255, 254, 254),var(--black), rgb(3, 3, 3));
+  background: linear-gradient(rgb(255, 254, 254), var(--black), rgb(3, 3, 3));
   border-radius: 10px;
   width: 18rem;
   height: 10rem;
-  
 }
-.ismeretek-cont img{
- width: 115px;
- filter: opacity(70%);
+.ismeretek-cont img {
+  width: 7rem;
+  filter: opacity(70%);
 }
-.javascript img{
-  width: 80px;
+.javascript img {
+  width: 5rem;
 }
-
 
 /*projectek -----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .munka {
@@ -221,7 +210,7 @@ body {
   flex-direction: column;
   margin-left: 2vw;
   margin-right: 2vw;
-  margin-bottom: 5vw;
+  margin-bottom: 10vw;
   width: 75vw;
   padding: 0;
 }
@@ -229,11 +218,13 @@ body {
   border: 2px solid var(--lightblue);
   width: 75vw;
   border-radius: 20px;
-  box-shadow: 0px 0px 20px rgb(255, 255, 255);
+  box-shadow: 0px 0px 20px var(--lightblue);
 }
 .project h3 {
-  
   font-size: 20px;
+}
+.project a i {
+  vertical-align: top;
 }
 /*ikonok-----------------------------------------------------------------------------------------*/
 .fa-github {
@@ -253,30 +244,38 @@ body {
 /*kapcsolat---------------------------------------------------------------------*/
 
 .kapcsolat-cont {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
+  margin-top: 22vh;
+  margin-left: 2vw;
+  font-size: 1.5rem;
 }
 .kapcsolat-cont fieldset {
   border: none;
 }
+.kapcsolat-cont fieldset p a {
+  color: white;
+}
 
 .kapcsolat-cont form {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 input[type="text"] {
-  font-size: 17px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  background: var(--black);
 }
 input[type="email"] {
-  font-size: 17px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  background: var(--black);
 }
 
 .kapcsolat-cont input {
-  box-shadow: 0px 0px 20px rgb(255, 255, 255);
+  box-shadow: 0px 0px 20px var(--lightblue);
   width: 40vw;
   height: 40px;
   margin-top: 10px;
@@ -284,117 +283,71 @@ input[type="email"] {
   border: 2px solid rgb(128, 243, 252);
   margin-bottom: 5px;
   border-radius: 8px;
-  background: radial-gradient(
-    rgba(243, 245, 245, 0.1),
-    rgba(239, 243, 243, 0.8)
-  );
+  background: var(--black);
+  width: 90%;
+  color: white;
 }
 ::placeholder {
-  color: black;
+  color: var(--lightblue);
   font-size: 20px;
 }
 .kapcsolat-cont textarea {
   border-radius: 6px;
   padding: 3px;
-  width: 50vw;
-  background: radial-gradient(
-    rgba(243, 245, 245, 0.1),
-    rgba(239, 243, 243, 0.8)
-  );
-  border: 1px solid rgb(128, 243, 252);
-  box-shadow: 0px 0px 20px rgb(255, 255, 255);
+  width: 90%;
+  background: var(--black);
+  border: 1px solid var(--lightblue);
+  box-shadow: 0px 0px 20px var(--lightblue);
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bold;
   margin-bottom: 20px;
   font-size: 20px;
+  color: white;
 }
 
 .kapcsolat-gomb {
-  padding: 0.6em 2em;
-  border: none;
-  outline: none;
-  font-size: 30px;
-  color: rgb(32, 90, 250);
-  font-family: "Goldman", cursive;
-  text-shadow: 1px 1px 2px black, 1px 1px 2px black, 0 0 5px rgb(238, 234, 234),
-    0 0 15px rgb(247, 244, 244), 0 0 15px rgb(247, 244, 244),
-    0 0 15px rgb(241, 243, 243), 0 0 15px rgb(245, 248, 248),
-    0 0 15px rgb(247, 248, 248);
-  background: radial-gradient(
-    rgba(128, 243, 252, 0.1),
-    rgba(128, 243, 252, 0.3),
-    rgba(128, 243, 252, 1)
-  );
-  cursor: pointer;
   position: relative;
-  z-index: 0;
-  border-radius: 50%;
+  height: 5rem;
+  width: 17rem;
+  font-size: 30px;
+  color: var(--lightblue);
+  font-family: "Goldman", cursive;
+  text-shadow: var(--lightblue);
+  box-shadow: 0px 0px 20px var(--lightblue);
+  border: 1px solid var(--lightblue);
+  cursor: pointer;
+  border-radius: 13px;
   user-select: none;
+  background: var(--black);
 }
 
-.kapcsolat-gomb:before {
-  content: "";
-  background: linear-gradient(
-    45deg,
-    #008cff,
-    #028799,
-    #00e1ff,
-    #f5f7f5,
-    #00ffd5,
-    #2649f8,
-    #f3f2f5,
-    #00ffff,
-    #0066ff
-  );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing-button-85 20s linear infinite;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 50%;
-}
 .kapcsolat-ikonok {
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: space-around;
+  margin-top: 2vh;
+  margin-left: 1.5vw;
+  margin-bottom: 3vh;
 }
 .kapcsolat-ikonok a {
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: -200px;
+  margin-top: 2rem;
   color: var(--lightblue);
 }
 .kapcsolat-ikonok i {
-  font-size: 50px;
+  font-size: 3.5rem;
 }
-
-.kapcsolat-gomb:after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(
-    rgba(128, 243, 252, 0.1),
-    rgba(128, 243, 252, 0.3)
-  );
-  left: 0;
-  top: 0;
-  border-radius: 50%;
+footer p{
+  margin-left: 3vw;
+  font-size: 1.3em;
 }
-
 /* desktop reszponzív kép-----------------------------------------------------------------*/
 
 @media screen and (min-width: 900px) {
   .nav-checkbox-gomb {
     display: none;
   }
-
 
   .nav-cont .nav-lista {
     display: flex;
@@ -436,7 +389,6 @@ input[type="email"] {
   }
   .fooldal-nev {
     font-size: 3.5em;
-    
   }
   .fooldal-kep {
     display: block;
@@ -445,28 +397,26 @@ input[type="email"] {
     margin-left: auto;
     padding-right: 5vw;
   }
-  .rolam-cont{
+  .rolam-cont {
     padding-top: 3vw;
   }
-  
-  .rolam-szoveg{
+
+  .rolam-szoveg {
     margin-top: 10vw;
     margin-left: 0.5vw;
     margin-right: 0.5vw;
   }
-  .rolam-pic{
+  .rolam-pic {
     width: 35vmax;
     height: 20vmax;
     margin-left: 0;
     margin-right: 1vw;
     margin-top: -6vw;
     float: right;
-    
   }
-  .ismeretek-cont{
+  .ismeretek-cont {
     padding-top: 13vw;
   }
-    
 
   .munka {
     margin-left: 15vw;
@@ -477,5 +427,11 @@ input[type="email"] {
   }
   .project img {
     width: 50vmax;
+  }
+  .kapcsolat-cont input {
+    width: 50%;
+  }
+  .kapcsolat-cont textarea {
+    width: 50%;
   }
 }
