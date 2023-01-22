@@ -53,6 +53,7 @@ body {
   position: fixed;
   width: 100%;
   z-index: 10000;
+  
 }
 
 .nav-cont .nav-lista {
@@ -101,12 +102,21 @@ body {
 }
 
 /*fő oldal név-kép-----------------------------------------------------------------------------------------------------------------------------------------------------*/
-
+.zaszlo{
+  position: absolute;
+  z-index: 10001;
+  width:3rem;
+margin-left: 5%;
+  margin-top:0.1rem ;
+}
+.zaszlo-hun{
+  width:4.5rem;
+}
 .focim-cont {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 10vw;
+  padding-top: 12vw;
   margin-bottom: 25vw;
   height: 100vh;
 }
@@ -127,9 +137,10 @@ body {
 
 /*bemutatkozás -------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .rolam-cont {
+  
   height: 100vh;
   padding-top: 8vh;
-  margin-bottom: 75vh;
+  
 }
 
 .rolam-cim {
@@ -166,6 +177,8 @@ body {
   margin-left: 10vw;
   margin-right: 10vw;
   margin-bottom: 80vh;
+  margin-top: 5vh;
+  margin-top: 65vh;
 }
 .ismeretek-cont h2 {
   position: absolute;
@@ -382,6 +395,11 @@ footer p{
     color: aliceblue;
     text-shadow: aliceblue 0px 0px 5px;
   }
+.zaszlo{
+  z-index: 1000;
+  margin-left: 93%;
+  margin-top:7rem ;
+}
 
   .focim-cont {
     flex-direction: row;
@@ -416,6 +434,7 @@ footer p{
   }
   .ismeretek-cont {
     padding-top: 13vw;
+    margin-top: 1vh;
   }
 
   .munka {
