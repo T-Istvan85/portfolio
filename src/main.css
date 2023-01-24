@@ -159,13 +159,13 @@ margin-left: 5%;
 .rolam-pic {
   width: 75vw;
   height: 40vw;
-  margin-left: 16vw;
+  margin-left: 10vw;
   margin-right: 10vw;
 }
 
 .rolam-szoveg p {
   padding: 2vw;
-  font-size: 25px;
+  font-size: 1.5rem;
   font-family: "Rajdhani", sans-serif;
 }
 
@@ -208,7 +208,7 @@ margin-left: 5%;
 /*projectek -----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .munka {
   margin-left: 5vw;
-  padding-top: 1vh;
+  padding-top: 5vh;
 }
 
 .project-cont {
@@ -234,7 +234,7 @@ margin-left: 5%;
   box-shadow: 0px 0px 20px var(--lightblue);
 }
 .project h3 {
-  font-size: 20px;
+  font-size: 1.3em;
 }
 .project a i {
   vertical-align: top;
@@ -242,16 +242,16 @@ margin-left: 5%;
 /*ikonok-----------------------------------------------------------------------------------------*/
 .fa-github {
   color: var(--lightblue);
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 .fa-html5 {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 .fa-css3-alt {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 .fa-square-js {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 /*kapcsolat---------------------------------------------------------------------*/
@@ -290,9 +290,9 @@ input[type="email"] {
 .kapcsolat-cont input {
   box-shadow: 0px 0px 20px var(--lightblue);
   width: 40vw;
-  height: 40px;
-  margin-top: 10px;
-  padding: 6px;
+  height: 2.5rem;
+  margin-top: 0.3rem;
+  padding: 1rem;
   border: 2px solid rgb(128, 243, 252);
   margin-bottom: 5px;
   border-radius: 8px;
@@ -302,11 +302,11 @@ input[type="email"] {
 }
 ::placeholder {
   color: var(--lightblue);
-  font-size: 20px;
+  font-size: 1em;
 }
 .kapcsolat-cont textarea {
   border-radius: 6px;
-  padding: 3px;
+  padding-left: 0.5rem;
   width: 90%;
   background: var(--black);
   border: 1px solid var(--lightblue);
@@ -314,15 +314,15 @@ input[type="email"] {
   font-family: "Rajdhani", sans-serif;
   font-weight: bold;
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 0.8em;
   color: white;
 }
 
 .kapcsolat-gomb {
   position: relative;
-  height: 5rem;
+  height: 3.5rem;
   width: 17rem;
-  font-size: 30px;
+  font-size: 1.5em;
   color: var(--lightblue);
   font-family: "Goldman", cursive;
   text-shadow: var(--lightblue);
