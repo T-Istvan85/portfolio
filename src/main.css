@@ -53,7 +53,6 @@ body {
   position: fixed;
   width: 100%;
   z-index: 10000;
-  
 }
 
 .nav-cont .nav-lista {
@@ -94,23 +93,21 @@ body {
 
 .nav-lista li a {
   color: var(--lightblue);
-  
 }
 .nav-lista li a:hover {
   color: aliceblue;
-  
 }
 
 /*fő oldal név-kép-----------------------------------------------------------------------------------------------------------------------------------------------------*/
-.zaszlo{
+.zaszlo {
   position: fixed;
   z-index: 10001;
-  width:3rem;
-margin-left: 5%;
-  margin-top:0.1rem ;
+  width: 3rem;
+  margin-left: 5%;
+  margin-top: 0.1rem;
 }
-.zaszlo-hun{
-  width:4.5rem;
+.zaszlo-hun {
+  width: 4.5rem;
 }
 .focim-cont {
   display: flex;
@@ -137,10 +134,8 @@ margin-left: 5%;
 
 /*bemutatkozás -------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .rolam-cont {
-  
   height: 100vh;
   padding-top: 8vh;
-  
 }
 
 .rolam-cim {
@@ -351,7 +346,7 @@ input[type="email"] {
 .kapcsolat-ikonok i {
   font-size: 3.5rem;
 }
-footer p{
+footer p {
   margin-left: 3vw;
   font-size: 1.3em;
 }
@@ -395,11 +390,11 @@ footer p{
     color: aliceblue;
     text-shadow: aliceblue 0px 0px 5px;
   }
-.zaszlo{
-  z-index: 1000;
-  margin-left: 93%;
-  margin-top:7rem ;
-}
+  .zaszlo {
+    z-index: 1000;
+    margin-left: 93%;
+    margin-top: 7rem;
+  }
 
   .focim-cont {
     flex-direction: row;
