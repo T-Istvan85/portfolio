@@ -1,7 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
 :root {
   --darkblue: #024e7a;
   --black: rgb(19, 18, 18);
   --lightblue: #80f3fc;
+}
+
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(250, 247, 247, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 10px 30px rgba(173, 172, 172, 0);
+  }
 }
 
 body {
