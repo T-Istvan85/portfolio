@@ -136,7 +136,6 @@ body {
   flex-direction: column;
   padding-top: 12vw;
   margin-bottom: 25vw;
-  height: 100vh;
 }
 .fooldal-nev {
   font-size: 3em;
@@ -419,7 +418,7 @@ footer p {
 
   .focim-cont {
     flex-direction: row;
-    padding-top: 10em;
+    padding-top: 25vh;
   }
   .fooldal-nev {
     font-size: 3.5em;
