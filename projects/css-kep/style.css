@@ -1,0 +1,250 @@
+@charset "utf-8";
+/***
+    The new CSS reset - version 1.8.5 (last updated 14.6.2023)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+    - The "html" attribute is exclud, because otherwise a bug in Chrome breaks the CSS hyphens property (https://github.com/elad2412/the-new-css-reset/issues/36)
+ */
+*:where(
+    :not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)
+  ) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a,
+button {
+  cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol,
+ul,
+menu {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+input,
+textarea {
+  -webkit-user-select: auto;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+/* minimum style to allow to style meter element */
+meter {
+  -webkit-appearance: revert;
+  appearance: revert;
+}
+
+/* preformatted text - use only for this feature */
+:where(pre) {
+  all: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::placeholder {
+  color: unset;
+}
+
+/* remove default dot (•) sign */
+::marker {
+  content: initial;
+}
+
+/* fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+:where([hidden]) {
+  display: none;
+}
+
+/* revert for bug in Chromium browsers
+   - fix for the content editable attribute will work properly.
+   - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element */
+:where([contenteditable]:not([contenteditable="false"])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  -webkit-user-select: auto;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable="true"]) {
+  -webkit-user-drag: element;
+}
+
+/* Revert Modal native behavior */
+:where(dialog:modal) {
+  all: revert;
+}
+body {
+  background-color: rgb(159, 215, 250);
+}
+.csillag-cont{
+    display: flex;
+    justify-content: center;
+    
+}
+.csillag1 {
+    position:absolute;
+    width: 1rem;
+    height: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3.5rem;
+    border-left: 2.2rem solid transparent;
+    border-right: 2.2rem solid transparent;
+    border-top: 4rem solid #e2e606;
+    
+}
+.csillag2 {
+    position:absolute;
+    width: 1rem;
+    height: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.3rem;
+    border-left: 2.2rem solid transparent;
+    border-right: 2.2rem solid transparent;
+    border-bottom: 4rem solid #e2e606;
+    
+}
+.teteje {
+    width: 10rem;
+    height: 0;
+    margin-top: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 6rem solid transparent;
+    border-right: 6rem solid transparent;
+    border-bottom: 10rem solid #02681c;
+    
+}
+.kék-dísz{
+position: absolute;
+background-color: #0000ff;
+width: 2rem;
+height: 2rem;
+border-radius: 50%;
+margin-top: 3rem;
+margin-left: -0.5rem;
+box-shadow: #0000ff 0 0 5px 5px;
+}
+.piros-dísz{
+    position: absolute;
+    background-color: red;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-top: 7rem;
+    margin-left: -3rem;
+    box-shadow: red 0 0 5px 5px;
+}
+
+.közepe {
+    width: 19rem;
+    height: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 6rem solid transparent;
+    border-right: 6rem solid transparent;
+    border-bottom: 10rem solid #02681c;
+}
+.sárga-dísz{
+    position: absolute;
+    background-color: #fff200;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+    margin-left: 5rem;
+    box-shadow: #fff200 0 0 5px 5px;
+}
+.lila-dísz{
+    position: absolute;
+    background-color: #7c3cf3;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-top: 6rem;
+    box-shadow: #7c3cf3 0 0 5px 5px;
+}
+.alja {
+  width: 23rem;
+  height: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 6rem solid transparent;
+  border-right: 6rem solid transparent;
+  border-bottom: 10rem solid #02681c;
+  
+}
+.rózsaszín-dísz{
+    position: absolute;
+    background-color: #f78d8d;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-top: 7rem;
+    box-shadow: #f78d8d 0 0 5px 5px;
+}
+.narancs-dísz{
+    position: absolute;
+    background-color: #ffa200;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-left: 4rem;
+    box-shadow: #ffa200 0 0 5px 5px;
+}
+.cián-dísz{
+    position: absolute;
+    background-color: #02bca9;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-top: 5rem;
+    margin-left: 9rem;
+    box-shadow: #02bca9 0 0 5px 5px;
+}
+.törzs {
+  background-color: rgb(59, 43, 20);
+  width: 2rem;
+  height: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.talaj {
+  background-color: rgb(254, 255, 254);
+  width: auto;
+  height: 5rem;
+}
