@@ -86,10 +86,12 @@ meter {
   all: revert;
 }
 body {
-  background-image: linear-gradient(rgb(5, 233, 230),rgb(83, 83, 83), rgb(246, 248, 246));
+  background-image: linear-gradient(rgb(5, 233, 230),rgb(249, 202, 114), rgb(246, 248, 246));
+  background-repeat: no-repeat;
 }
 .felhő-cont{
   display: flex;
+  margin-top: 1.5rem;
 }
 .felhő1{
 position: absolute;
@@ -117,7 +119,7 @@ opacity: 50%;
   width: 18rem;
   height: 4rem;
   margin-top: 2rem;
-  margin-left: 73vw;
+  margin-left: 60vw;
   border-radius: 50%;
   opacity: 80%;
 }
@@ -129,7 +131,7 @@ opacity: 50%;
   margin-top: 2rem;
   margin-left: 73vw;
   border-radius: 50%;
-  box-shadow: #fff200 0 0 20px 10px;
+  box-shadow: #fff200 0 0 40px 30px;
 }
 .csillag-cont{
     display: flex;
@@ -161,7 +163,7 @@ opacity: 50%;
     
 }
 .teteje {
-    width: 10rem;
+    width: 10em;
     height: 0;
     margin-top: 7rem;
     margin-left: auto;
@@ -173,23 +175,23 @@ opacity: 50%;
 }
 .kék-dísz{
 position: absolute;
-background-color: #0000ff;
+background: radial-gradient(white, blue, blue);
 width: 2rem;
 height: 2rem;
 border-radius: 50%;
 margin-top: 3rem;
 margin-left: -0.5rem;
-box-shadow: #0000ff 0 0 5px 5px;
+
 }
 .piros-dísz{
     position: absolute;
-    background-color: red;
+    background: radial-gradient(white, red, red);
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
     margin-top: 7rem;
     margin-left: -3rem;
-    box-shadow: red 0 0 5px 5px;
+    
 }
 
 .közepe {
@@ -203,22 +205,22 @@ box-shadow: #0000ff 0 0 5px 5px;
 }
 .sárga-dísz{
     position: absolute;
-    background-color: #fff200;
+    background: radial-gradient(white, yellow, yellow);
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
     margin-top: 1rem;
     margin-left: 5rem;
-    box-shadow: #fff200 0 0 5px 5px;
+    
 }
 .lila-dísz{
     position: absolute;
-    background-color: #7c3cf3;
+    background: radial-gradient(white, purple, purple);
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
     margin-top: 6rem;
-    box-shadow: #7c3cf3 0 0 5px 5px;
+    
 }
 .alja {
   width: 23rem;
@@ -232,31 +234,31 @@ box-shadow: #0000ff 0 0 5px 5px;
 }
 .rózsaszín-dísz{
     position: absolute;
-    background-color: #f78d8d;
+    background: radial-gradient(white, pink, pink);
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
     margin-top: 7rem;
-    box-shadow: #f78d8d 0 0 5px 5px;
+    
 }
 .narancs-dísz{
     position: absolute;
-    background-color: #ffa200;
+    background: radial-gradient(white, orange, orange);
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
     margin-left: 4rem;
-    box-shadow: #ffa200 0 0 5px 5px;
+    
 }
 .cián-dísz{
     position: absolute;
-    background-color: #02bca9;
+    background: radial-gradient(white, cyan, cyan);
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
     margin-top: 5rem;
     margin-left: 9rem;
-    box-shadow: #02bca9 0 0 5px 5px;
+    
 }
 .törzs {
   background-color: rgb(59, 43, 20);
@@ -267,7 +269,7 @@ box-shadow: #0000ff 0 0 5px 5px;
 }
 
 .talaj {
-  background-color: rgb(211, 211, 211);
+  background-color: rgb(238, 237, 237);
   width: auto;
-  height: 5rem;
+  height: 4.5rem;
 }
