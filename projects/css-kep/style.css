@@ -29,38 +29,31 @@ img {
   max-block-size: 100%;
 }
 
-
 table {
   border-collapse: collapse;
 }
-
 
 input,
 textarea {
   -webkit-user-select: auto;
 }
 
-
 textarea {
   white-space: revert;
 }
-
 
 meter {
   -webkit-appearance: revert;
   appearance: revert;
 }
 
-
 :where(pre) {
   all: revert;
 }
 
-
 ::placeholder {
   color: unset;
 }
-
 
 ::marker {
   content: initial;
@@ -86,24 +79,28 @@ meter {
   all: revert;
 }
 body {
-  background-image: linear-gradient(rgb(5, 233, 230),rgb(249, 202, 114), rgb(246, 248, 246));
+  background-image: linear-gradient(
+    rgb(5, 233, 230),
+    rgb(249, 202, 114),
+    rgb(246, 248, 246)
+  );
   background-repeat: no-repeat;
 }
-.felhő-cont{
+.felhő-cont {
   display: flex;
   margin-top: 1.5rem;
 }
-.felhő1{
-position: absolute;
-background-color: white;
-width: 18rem;
-height: 4rem;
-margin-top: 2rem;
-margin-left: 13vw;
-border-radius: 50%;
-opacity: 50%;
+.felhő1 {
+  position: absolute;
+  background-color: white;
+  width: 18rem;
+  height: 4rem;
+  margin-top: 2rem;
+  margin-left: 13vw;
+  border-radius: 50%;
+  opacity: 50%;
 }
-.felhő2{
+.felhő2 {
   position: absolute;
   background-color: white;
   width: 18rem;
@@ -113,7 +110,7 @@ opacity: 50%;
   border-radius: 50%;
   opacity: 50%;
 }
-.felhő3{
+.felhő3 {
   position: absolute;
   background-color: white;
   width: 18rem;
@@ -123,7 +120,7 @@ opacity: 50%;
   border-radius: 50%;
   opacity: 80%;
 }
-.nap{
+.nap {
   position: absolute;
   background-color: rgb(249, 237, 3);
   width: 8rem;
@@ -133,94 +130,76 @@ opacity: 50%;
   border-radius: 50%;
   box-shadow: #fff200 0 0 40px 30px;
 }
-.csillag-cont{
-    display: flex;
-    justify-content: center;
-    
+.csillag-cont {
+  display: flex;
+  justify-content: center;
 }
 .csillag1 {
-    position:absolute;
-    width: 1rem;
-    height: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3.5rem;
-    border-left: 2.2rem solid transparent;
-    border-right: 2.2rem solid transparent;
-    border-top: 4rem solid #e2e606;
-    
+  position: absolute;
+  width: 1rem;
+  height: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3.5rem;
+  border-left: 2.2rem solid transparent;
+  border-right: 2.2rem solid transparent;
+  border-top: 4rem solid #e2e606;
 }
 .csillag2 {
-    position:absolute;
-    width: 1rem;
-    height: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2.3rem;
-    border-left: 2.2rem solid transparent;
-    border-right: 2.2rem solid transparent;
-    border-bottom: 4rem solid #e2e606;
-    
+  position: absolute;
+  width: 1rem;
+  height: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.3rem;
+  border-left: 2.2rem solid transparent;
+  border-right: 2.2rem solid transparent;
+  border-bottom: 4rem solid #e2e606;
+}
+.méret-pozíció{
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
 }
 .teteje {
-    width: 10em;
-    height: 0;
-    margin-top: 7rem;
-    margin-left: auto;
-    margin-right: auto;
-    border-left: 6rem solid transparent;
-    border-right: 6rem solid transparent;
-    border-bottom: 10rem solid #02681c;
-    
+  width: 10em;
+  height: 0;
+  margin-top: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 6rem solid transparent;
+  border-right: 6rem solid transparent;
+  border-bottom: 10rem solid #02681c;
 }
-.kék-dísz{
-position: absolute;
-background: radial-gradient(white, blue, blue);
-width: 2rem;
-height: 2rem;
-border-radius: 50%;
-margin-top: 3rem;
-margin-left: -0.5rem;
-
+.kék-dísz {
+  background: radial-gradient(white, blue, blue);
+  margin-top: 3rem;
+  margin-left: -0.5rem;
 }
-.piros-dísz{
-    position: absolute;
-    background: radial-gradient(white, red, red);
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    margin-top: 7rem;
-    margin-left: -3rem;
-    
+.piros-dísz {
+  position: absolute;
+  background: radial-gradient(white, red, red);
+  margin-top: 7rem;
+  margin-left: -3rem;
 }
-
 .közepe {
-    width: 19rem;
-    height: 0;
-    margin-left: auto;
-    margin-right: auto;
-    border-left: 6rem solid transparent;
-    border-right: 6rem solid transparent;
-    border-bottom: 10rem solid #02681c;
+  width: 19rem;
+  height: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 6rem solid transparent;
+  border-right: 6rem solid transparent;
+  border-bottom: 10rem solid #02681c;
 }
-.sárga-dísz{
-    position: absolute;
-    background: radial-gradient(white, yellow, yellow);
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    margin-top: 1rem;
-    margin-left: 5rem;
-    
+.sárga-dísz {
+  background: radial-gradient(white, yellow, yellow);
+  margin-top: 1rem;
+  margin-left: 5rem;
 }
-.lila-dísz{
-    position: absolute;
-    background: radial-gradient(white, purple, purple);
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    margin-top: 6rem;
-    
+.lila-dísz {
+  background: radial-gradient(white, purple, purple);
+  margin-top: 6rem;
 }
 .alja {
   width: 23rem;
@@ -230,35 +209,19 @@ margin-left: -0.5rem;
   border-left: 6rem solid transparent;
   border-right: 6rem solid transparent;
   border-bottom: 10rem solid #02681c;
-  
 }
-.rózsaszín-dísz{
-    position: absolute;
-    background: radial-gradient(white, pink, pink);
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    margin-top: 7rem;
-    
+.rózsaszín-dísz {
+  background: radial-gradient(white, pink, pink);
+  margin-top: 7rem;
 }
-.narancs-dísz{
-    position: absolute;
-    background: radial-gradient(white, orange, orange);
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    margin-left: 4rem;
-    
+.narancs-dísz {
+  background: radial-gradient(white, orange, orange);
+  margin-left: 4rem;
 }
-.cián-dísz{
-    position: absolute;
-    background: radial-gradient(white, cyan, cyan);
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    margin-top: 5rem;
-    margin-left: 9rem;
-    
+.cián-dísz {
+  background: radial-gradient(white, cyan, cyan);
+  margin-top: 5rem;
+  margin-left: 9rem;
 }
 .törzs {
   background-color: rgb(59, 43, 20);
