@@ -80,9 +80,9 @@ meter {
 }
 body {
   background-image: linear-gradient(
-    rgb(5, 233, 230),
-    rgb(249, 202, 114),
-    rgb(246, 248, 246)
+    #05e9e6,
+    #f9ca72,
+    #f6f8f6
   );
   background-repeat: no-repeat;
 }
@@ -92,7 +92,7 @@ body {
 }
 .felhő1 {
   position: absolute;
-  background-color: white;
+  background-color: #ffffff;
   width: 18rem;
   height: 4rem;
   margin-top: 2rem;
@@ -102,7 +102,7 @@ body {
 }
 .felhő2 {
   position: absolute;
-  background-color: white;
+  background-color: #ffffff;
   width: 18rem;
   height: 4rem;
   margin-top: 2rem;
@@ -112,7 +112,7 @@ body {
 }
 .felhő3 {
   position: absolute;
-  background-color: white;
+  background-color: #ffffff;
   width: 18rem;
   height: 4rem;
   margin-top: 2rem;
@@ -122,7 +122,7 @@ body {
 }
 .nap {
   position: absolute;
-  background-color: rgb(249, 237, 3);
+  background-color: #f9ed03;
   width: 8rem;
   height: 8rem;
   margin-top: 2rem;
@@ -173,13 +173,13 @@ body {
   border-bottom: 10rem solid #02681c;
 }
 .kék-dísz {
-  background: radial-gradient(white, blue, blue);
+  background: radial-gradient(#ffffff, #0000ff, #0000ff);
   margin-top: 3rem;
   margin-left: -0.5rem;
 }
 .piros-dísz {
   position: absolute;
-  background: radial-gradient(white, red, red);
+  background: radial-gradient(#ffffff, #ff0000, #ff0000);
   margin-top: 7rem;
   margin-left: -3rem;
 }
@@ -193,12 +193,12 @@ body {
   border-bottom: 10rem solid #02681c;
 }
 .sárga-dísz {
-  background: radial-gradient(white, yellow, yellow);
+  background: radial-gradient(#ffffff, #ffff00, #ffff00);
   margin-top: 1rem;
   margin-left: 5rem;
 }
 .lila-dísz {
-  background: radial-gradient(white, purple, purple);
+  background: radial-gradient(#ffffff, #800080, #800080);
   margin-top: 6rem;
 }
 .alja {
@@ -211,20 +211,20 @@ body {
   border-bottom: 10rem solid #02681c;
 }
 .rózsaszín-dísz {
-  background: radial-gradient(white, pink, pink);
+  background: radial-gradient(#ffffff, #ffc0cb, #ffc0cb);
   margin-top: 7rem;
 }
 .narancs-dísz {
-  background: radial-gradient(white, orange, orange);
+  background: radial-gradient(#ffffff, #ffa500, #ffa500);
   margin-left: 4rem;
 }
 .cián-dísz {
-  background: radial-gradient(white, cyan, cyan);
+  background: radial-gradient(#ffffff, #00ffff, #00ffff);
   margin-top: 5rem;
   margin-left: 9rem;
 }
 .törzs {
-  background-color: rgb(59, 43, 20);
+  background-color: #3b2b14;
   width: 2rem;
   height: 3rem;
   margin-left: auto;
@@ -232,7 +232,7 @@ body {
 }
 
 .talaj {
-  background-color: rgb(238, 237, 237);
+  background-color: #eeeded;
   width: auto;
   height: 4.5rem;
 }
